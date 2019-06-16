@@ -1,0 +1,29 @@
+React-Native App 2.0
+
+//for ios
+
+1.react-native run-ios
+program always run. But if u have a problem,follow steps
+1)remove your node_modules
+2)remove android and ios directory 
+3)npm install
+4)react-native eject
+5)react-native link
+6)react-native run-ios
+if u have font problem, follow steps
+1) copy aristotelica.txt to /home
+2)start XCode,and add font in build parse
+3)in Xcode,pInfo file change.(i.e add font aristotelica.ttf)
+4)react-native run-ios
+
+for Android
+
+1,react-native run-android
+if u have program,follow me
+1)in /android/build.gradle, set supportLibVersion = "26.0.0"
+2)in /android/app/build.gradle,set below.
+	defaultConfig {
+ 
+        multiDexEnabled true
+    }
+3)react-native run-android
